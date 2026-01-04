@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Helpdesk System</title>
+</head>
+    
+<body>
+    <div class="container">
+        <h1>Employee Helpdesk System</h1>
+
+        <div id="form-container">
+        <form action="#" method="post">
+            <label for="username">Name:</label>
+            <input type="text" name="username" id="username" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email ID" required>
+
+            <label for="issuetype">Issue Type:</label>
+            <select name="issuetype" id="issuetype">
+                <option value="software">Software</option>
+                <option value="hardware">Hardware</option>
+                <option value="network">Network</option>
+                <option value="other">Other</option>
+
+            </select>
+            <p id="issue-note"></p>
+
+            <label for="desc">Description:</label>
+            <textarea name="desc" id="desc" placeholder="Describe the issue" required></textarea>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+        </div>
+        <p id="success-message"></p>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
